@@ -58,7 +58,3 @@ files.download(os.path.join(os.getcwd(), 'sphere_5mm.step'))
 - The notebook will automatically scrape CadQuery documentation and store it in a vector database for retrieval.
 - All generated code will use `cadquery` and export models as STEP files.
 
----
-
-**Author:** [Your Name]  
-**License:** MIT
