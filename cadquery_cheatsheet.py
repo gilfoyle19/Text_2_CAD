@@ -5,6 +5,7 @@ TO_DO: Last updated 19-05-2025
 3. Read the LIMA paper and CeADAR ultimate guide to fine-tuning the LLMs.
 4. Read the Harvard CS197 document.
 5. STL to point cloud conversion function.
+6. Figure out how to create a dataset (prompt and code pairs, or any other additional information).
 6. Create a mini dataset using intermediate shapes and models and fine-tune the LLM.
 7. Evaluate the performance of the fine-tuned LLM on the dataset.
 8. Then proceed with complex shapes and models and assembly models.
@@ -191,3 +192,16 @@ Assemnbly models:
 Need to be added...
 """
 
+EXAMPLES = """
+
+(Just a placeholder, format might change)
+#1
+Code: import cadquery as cq\n\n# parameters\nlength =4\nheight = 3\nthickness =
+    0.5\nfillet_radius = 0.5\n\n# functions\nresult = cq.Workplane("XY" ).box(length,
+    height, thickness).edges("|Z").fillet(fillet_radius)
+Name of Part: Simple Rectangular Plate
+label: A rectangular plate with length of 4 mm, height of 3 mm and a thickness of
+    0.5 mm\nThe edges of the plate are filleted with a fillet radius of 0.5 mm
+
+
+"""
