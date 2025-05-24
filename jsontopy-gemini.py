@@ -8,7 +8,7 @@ from datetime import datetime
 import concurrent.futures  
 import hashlib  
 
-client = genai.Client(api_key="AIzaSyAqNWrQ8eOvCb6o6EHwLS22QoWMnAgHxtI")  # Initializes a client for the Google generative AI model (API key needs to be filled).
+client = genai.Client(api_key="")  # Initializes a client for the Google generative AI model (API key needs to be filled).
 
 def get_input(json_path, file_index, save_path):  # Creates a prompt for the AI based on a JSON file.
     with open(json_path, "r", encoding="utf-8") as f:
